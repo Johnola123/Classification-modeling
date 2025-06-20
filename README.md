@@ -1,18 +1,37 @@
 # Car Sales Classification-modeling
 
-# Summary of Steps:
+# Objective:
+To classify car buyers based on historical car sales data using Random Forest and evaluate model performance.
 
-Loaded car sales dataset and encoded categorical variables.
+# Workflow Summary:
+## 1. Data Loading and Encoding
+Read car sales dataset using pandas.
 
-Split dataset into training and testing sets.
+Applied LabelEncoder and one-hot encoding for categorical variables.
 
-Applied RandomForestClassifier with default parameters.
+## 2. Data Splitting
+Used train_test_split to create training and test sets (default 80/20 split).
 
-Evaluated with accuracy score, confusion matrix, and classification report.
+## 3. Model Implementation
+Chose RandomForestClassifier for its robustness and interpretability.
 
-Final Result:
+Fit the model using default parameters.
 
-Test accuracy: ~96.6%
+## 4. Evaluation
+Computed:
 
-Model performs well across multiple categories with high precision and recall.
+Accuracy score
+
+Classification report
+
+Confusion matrix
+
+Feature importance was optionally visualized.
+
+# Results:
+Test Accuracy: ~96.6%
+
+Model showed high precision and recall across most classes.
+
+Excellent generalization with minimal overfitting.
 
